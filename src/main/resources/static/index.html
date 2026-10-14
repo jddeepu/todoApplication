@@ -124,9 +124,9 @@
 </div>
 
 <script>
-    const API_URL = 'http://localhost:8080/api/tasks';
+    const API_URL = '/api/tasks';
 
-    document.c("DOMContentLoaded", fetchTasks);
+    document.addEventListener("DOMContentLoaded", fetchTasks);
 
     function fetchTasks() {
         fetch(API_URL)
